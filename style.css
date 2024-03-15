@@ -6,6 +6,7 @@ header{
        display: flex;
     justify-content: center;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -501,6 +502,7 @@ margin-bottom: 7.5rem;
                                                           
                                                             
                                                             .images {
+                                                                /* background-color: rgb(82, 76, 76); */
                                                                 display: grid;
                                                                 height: 40rem;
                                                                 width: 40rem;
@@ -516,6 +518,8 @@ margin-bottom: 7.5rem;
                                                                 align-items: start;
                                                                 justify-items: center;
                                                                 margin-top: -9rem;
+
+                                                            
                                                             }
                                                             
                                                             .container {
@@ -523,6 +527,7 @@ margin-bottom: 7.5rem;
                                                                 height: 15rem;
                                                                 width: 18rem;
                                                                 border-radius: 15%;
+                                                                background-color: red;
                                                             }
                                                             
                                                             .container.one {
@@ -576,7 +581,18 @@ margin-bottom: 7.5rem;
                                                             }
                                                             
                                                             .page-2_tittle {
-                                                                margin: -12rem 0 0 -13rem;
+                                                                margin: -13rem 0rem 0rem 0rem;
+  background-color: red;
+  height: 21rem;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+                                                            }
+
+                                                            .page-2_icons{
+                                                                display: flex;
+                                                                justify-self: center;
                                                             }
                                                             
                                                             .icons {
@@ -657,6 +673,22 @@ margin-bottom: 7.5rem;
                                                                 background-color: #ffffff;
                                                                 color: #000000;
                                                             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            
                                                             /* page3 */
                                                             
                                                             #section--2.section {
