@@ -184,17 +184,31 @@ rgb(199, 10, 114) .down { */
     padding: 0 6rem;
     z-index: 100;
     color: wheat;
+    animation: slideIn 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 /* nav and stickly class at the same time */
 
 .nav.sticky {
+
     z-index: 1;
     overflow: hidden;
-    margin-top: -25px;
+    margin-top: 0;
+    top: 0;
+ background-color: #333;
     position: fixed;
-    background-color: rgba(68, 57, 57, 0.95);
-}
-                            
+    /* background-color: rgba(68, 57, 57, 0.95); */
+} 
+
+
+
+
+
+
+
+
+
+
 .nav__logo
 {
 height: 30px;
@@ -527,7 +541,7 @@ margin-bottom: 7.5rem;
                                                                 height: 15rem;
                                                                 width: 18rem;
                                                                 border-radius: 15%;
-                                                                background-color: red;
+                                                                background-color: rgb(115, 240, 13);
                                                             }
                                                             
                                                             .container.one {
@@ -582,7 +596,7 @@ margin-bottom: 7.5rem;
                                                             
                                                             .page-2_tittle {
                                                                 margin: -13rem 0rem 0rem 0rem;
-  background-color: red;
+  /* background-color: red; */
   height: 21rem;
   justify-self: end;
   display: flex;
