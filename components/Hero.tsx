@@ -1,18 +1,17 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 
 const Hero: React.FC = () => {
-  const imgRef = useRef<HTMLImageElement>(null)
-
   useEffect(() => {
     const revealIcons = () => {
       const trigger = window.innerHeight / 5 * 4
-      if (imgRef.current) {
-        const iconCoords = imgRef.current.getBoundingClientRect().top
+      const img = document.querySelector('.img1')
+      if (img) {
+        const iconCoords = img.getBoundingClientRect().top
         if (iconCoords < trigger) {
-          imgRef.current.classList.add('show')
+          img.classList.add('show')
         }
       }
     }
@@ -40,14 +39,10 @@ const Hero: React.FC = () => {
               <button className="btn">Learn more &DownArrow;</button>
             </div>
             <div className="container">
-              <Image
-                ref={imgRef}
+              <img
                 className="img1"
                 src="/assets/images/imgs/ims/mana.png"
                 alt="Fitness trainer"
-                width={400}
-                height={500}
-                priority
               />
             </div>
           </div>
