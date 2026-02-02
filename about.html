@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fitvate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">Fit<span style="background: linear-gradient(135deg, #e52525, #d400ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">v</span>ate</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Gradients -->
+    <section class="up into"></section>
+    <section class="down into"></section>
+    <section class="left into"></section>
+    <section class="right into"></section>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">Fit<span class="vv">v</span>ate.</h1>
+            <ul class="nav__links">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link active" href="about.html">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                <li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--btn btn--show-modal" href="#">Join us</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero section">
+        <div class="about-hero__content">
+            <h1 class="about-hero__title">About <span class="highlight">Fitvate</span></h1>
+            <p class="about-hero__subtitle">Transforming lives through fitness, one workout at a time</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission section">
+        <div class="mission__container">
+            <div class="mission__content">
+                <h2 class="section__title">Our Mission</h2>
+                <p class="mission__text">
+                    At Fitvate, we believe that fitness is not just about physical strength, but about building confidence, 
+                    discipline, and a better version of yourself. Our mission is to provide a welcoming environment where 
+                    everyone, regardless of their fitness level, can achieve their goals.
+                </p>
+                <p class="mission__text">
+                    We combine cutting-edge equipment, expert trainers, and personalized programs to create an experience 
+                    that goes beyond traditional gyms. Every member is part of our fitness family.
+                </p>
+            </div>
+            <div class="mission__image">
+                <img src="assets/images/imgs/Trainers/trainer1.jpg" alt="Our Mission">
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values section">
+        <div class="values__container">
+            <h2 class="section__title">Our Core Values</h2>
+            <div class="values__grid">
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="value-card__title">Excellence</h3>
+                    <p class="value-card__text">We strive for excellence in everything we do, from our facilities to our training programs.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="value-card__title">Community</h3>
+                    <p class="value-card__text">Building a supportive community where everyone motivates and inspires each other.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="value-card__title">Results</h3>
+                    <p class="value-card__text">Focused on delivering real, measurable results for every member.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-card__icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="value-card__title">Innovation</h3>
+                    <p class="value-card__text">Constantly evolving with the latest fitness trends and technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="about-stats section">
+        <div class="about-stats__container">
+            <div class="about-stats__item">
+                <div class="about-stats__number" data-target="10">0</div>
+                <div class="about-stats__label">Years of Excellence</div>
+            </div>
+            <div class="about-stats__item">
+                <div class="about-stats__number" data-target="50000">0</div>
+                <div class="about-stats__label">Happy Members</div>
+            </div>
+            <div class="about-stats__item">
+                <div class="about-stats__number" data-target="24">0</div>
+                <div class="about-stats__label">Expert Trainers</div>
+            </div>
+            <div class="about-stats__item">
+                <div class="about-stats__number" data-target="100">0</div>
+                <div class="about-stats__label">Programs Available</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story section">
+        <div class="story__container">
+            <div class="story__image">
+                <img src="assets/images/imgs/Trainers/trainer2.jpg" alt="Our Story">
+            </div>
+            <div class="story__content">
+                <h2 class="section__title">Our Story</h2>
+                <p class="story__text">
+                    Fitvate was founded in 2014 with a simple vision: to create a fitness center that feels like home. 
+                    What started as a small studio has grown into a state-of-the-art facility serving thousands of members.
+                </p>
+                <p class="story__text">
+                    Our founders, passionate fitness enthusiasts themselves, understood that the journey to fitness 
+                    is unique for everyone. That's why we've built a space that accommodates all fitness levels, 
+                    from beginners taking their first steps to athletes pushing their limits.
+                </p>
+                <p class="story__text">
+                    Today, Fitvate stands as a testament to what's possible when dedication meets passion. We're not 
+                    just a gym—we're a movement dedicated to transforming lives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
