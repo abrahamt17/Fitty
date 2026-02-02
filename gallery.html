@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fitvate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">Fit<span style="background: linear-gradient(135deg, #e52525, #d400ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">v</span>ate</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Gradients -->
+    <section class="up into"></section>
+    <section class="down into"></section>
+    <section class="left into"></section>
+    <section class="right into"></section>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">Fit<span class="vv">v</span>ate.</h1>
+            <ul class="nav__links">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                <li class="nav__item"><a class="nav__link active" href="gallery.html">Gallery</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--btn btn--show-modal" href="#">Join us</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero section">
+        <div class="gallery-hero__content">
+            <h1 class="gallery-hero__title">Our <span class="highlight">Gallery</span></h1>
+            <p class="gallery-hero__subtitle">Take a virtual tour of our amazing facility</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter section">
+        <div class="gallery-filter__container">
+            <button class="gallery-filter__btn active" data-filter="all">All</button>
+            <button class="gallery-filter__btn" data-filter="equipment">Equipment</button>
+            <button class="gallery-filter__btn" data-filter="classes">Classes</button>
+            <button class="gallery-filter__btn" data-filter="trainers">Trainers</button>
+            <button class="gallery-filter__btn" data-filter="facilities">Facilities</button>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery section">
+        <div class="gallery__container">
+            <div class="gallery__item" data-category="equipment">
+                <img src="assets/images/imgs/Trainers/trainer1.jpg" alt="Gym Equipment">
+                <div class="gallery__overlay">
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>Latest fitness machines</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="classes">
+                <img src="assets/images/imgs/Trainers/trainer2.jpg" alt="Group Classes">
+                <div class="gallery__overlay">
+                    <h3>Group Classes</h3>
+                    <p>High-energy workouts</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="trainers">
+                <img src="assets/images/imgs/Trainers/5.jpg" alt="Personal Training">
+                <div class="gallery__overlay">
+                    <h3>Expert Trainers</h3>
+                    <p>One-on-one guidance</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="facilities">
+                <img src="assets/images/imgs/ims/Back.png" alt="Facilities">
+                <div class="gallery__overlay">
+                    <h3>Premium Facilities</h3>
+                    <p>Spacious and modern</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="equipment">
+                <img src="assets/images/imgs/ims/girl2.png" alt="Free Weights">
+                <div class="gallery__overlay">
+                    <h3>Free Weights Area</h3>
+                    <p>Complete weight training</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="classes">
+                <img src="assets/images/imgs/ims/man3.png" alt="Yoga Class">
+                <div class="gallery__overlay">
+                    <h3>Yoga & Meditation</h3>
+                    <p>Find your inner peace</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="trainers">
+                <img src="assets/images/imgs/Trainers/client1.png" alt="Training Session">
+                <div class="gallery__overlay">
+                    <h3>Personal Training</h3>
+                    <p>Customized programs</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="facilities">
+                <img src="assets/images/imgs/ims/logo.png" alt="Locker Room">
+                <div class="gallery__overlay">
+                    <h3>Locker Rooms</h3>
+                    <p>Clean and spacious</p>
+                </div>
+            </div>
+            <div class="gallery__item" data-category="equipment">
+                <img src="assets/images/imgs/Trainers/bg.jpg" alt="Cardio Zone">
+                <div class="gallery__overlay">
+                    <h3>Cardio Zone</h3>
+                    <p>Latest cardio machines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery Images -->
+    <div class="gallery-modal" id="gallery-modal">
+        <span class="gallery-modal__close">&times;</span>
+        <img class="gallery-modal__img" id="gallery-modal-img" src="" alt="">
+        <div class="gallery-modal__caption" id="gallery-modal-caption"></div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fitvate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">Fit<span style="background: linear-gradient(135deg, #e52525, #d400ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">v</span>ate</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Gradients -->
+    <section class="up into"></section>
+    <section class="down into"></section>
+    <section class="left into"></section>
+    <section class="right into"></section>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">Fit<span class="vv">v</span>ate.</h1>
+            <ul class="nav__links">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                <li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+                <li class="nav__item"><a class="nav__link active" href="contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--btn btn--show-modal" href="#">Join us</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero section">
+        <div class="contact-hero__content">
+            <h1 class="contact-hero__title">Get In <span class="highlight">Touch</span></h1>
+            <p class="contact-hero__subtitle">We're here to help you on your fitness journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section">
+        <div class="contact__container">
+            <div class="contact__info">
+                <h2 class="section__title">Contact Information</h2>
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact__details">
+                        <h3>Address</h3>
+                        <p>123 Fitness Street<br>Health City, HC 12345</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact__details">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact__details">
+                        <h3>Email</h3>
+                        <p>info@fitvate.com<br>support@fitvate.com</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <div class="contact__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact__details">
+                        <h3>Hours</h3>
+                        <p>Open 24/7<br>Staff: Mon-Sun 6AM-10PM</p>
+                    </div>
+                </div>
+                <div class="contact__social">
+                    <a href="#" class="contact__social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="contact__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="contact__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="contact__social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact__form-wrapper">
+                <form class="contact__form">
+                    <h2 class="section__title">Send Us a Message</h2>
+                    <div class="contact__form-group">
+                        <input type="text" class="contact__input" placeholder="Your Name" required>
+                    </div>
+                    <div class="contact__form-group">
+                        <input type="email" class="contact__input" placeholder="Your Email" required>
+                    </div>
+                    <div class="contact__form-group">
+                        <input type="tel" class="contact__input" placeholder="Phone Number">
+                    </div>
+                    <div class="contact__form-group">
+                        <select class="contact__input" required>
+                            <option value="">Select Subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="training">Personal Training</option>
+                            <option value="classes">Group Classes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact__form-group">
+                        <textarea class="contact__input contact__textarea" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary contact__submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map section">
+        <div class="map__container">
+            <h2 class="section__title">Find Us</h2>
+            <div class="map__wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841321915747!2d-73.98811768459384!3d40.75889597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
