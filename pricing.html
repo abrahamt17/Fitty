@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Memberships - Fitvate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">Fit<span style="background: linear-gradient(135deg, #e52525, #d400ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">v</span>ate</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background Gradients -->
+    <section class="up into"></section>
+    <section class="down into"></section>
+    <section class="left into"></section>
+    <section class="right into"></section>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">Fit<span class="vv">v</span>ate.</h1>
+            <ul class="nav__links">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+                <li class="nav__item"><a class="nav__link active" href="pricing.html">Pricing</a></li>
+                <li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--btn btn--show-modal" href="#">Join us</a></li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pricing-hero section">
+        <div class="pricing-hero__content">
+            <h1 class="pricing-hero__title">Choose Your <span class="highlight">Plan</span></h1>
+            <p class="pricing-hero__subtitle">Flexible membership options designed to fit your lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing section">
+        <div class="pricing__container">
+            <div class="pricing-card">
+                <div class="pricing-card__badge">Basic</div>
+                <div class="pricing-card__price">
+                    <span class="pricing-card__currency">$</span>
+                    <span class="pricing-card__amount">29</span>
+                    <span class="pricing-card__period">/month</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li><i class="fas fa-check"></i> Full gym access</li>
+                    <li><i class="fas fa-check"></i> Locker room access</li>
+                    <li><i class="fas fa-check"></i> Free Wi-Fi</li>
+                    <li><i class="fas fa-check"></i> Group classes (limited)</li>
+                </ul>
+                <button class="btn btn--primary pricing-card__btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card pricing-card--featured">
+                <div class="pricing-card__badge pricing-card__badge--featured">Most Popular</div>
+                <div class="pricing-card__price">
+                    <span class="pricing-card__currency">$</span>
+                    <span class="pricing-card__amount">59</span>
+                    <span class="pricing-card__period">/month</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li><i class="fas fa-check"></i> Everything in Basic</li>
+                    <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                    <li><i class="fas fa-check"></i> Personal trainer consultation</li>
+                    <li><i class="fas fa-check"></i> Nutrition planning</li>
+                    <li><i class="fas fa-check"></i> Progress tracking app</li>
+                </ul>
+                <button class="btn btn--primary pricing-card__btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card__badge">Premium</div>
+                <div class="pricing-card__price">
+                    <span class="pricing-card__currency">$</span>
+                    <span class="pricing-card__amount">99</span>
+                    <span class="pricing-card__period">/month</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li><i class="fas fa-check"></i> Everything in Pro</li>
+                    <li><i class="fas fa-check"></i> 1-on-1 personal training</li>
+                    <li><i class="fas fa-check"></i> VIP lounge access</li>
+                    <li><i class="fas fa-check"></i> Spa & recovery facilities</li>
+                    <li><i class="fas fa-check"></i> Priority class booking</li>
+                    <li><i class="fas fa-check"></i> Guest passes (2/month)</li>
+                </ul>
+                <button class="btn btn--primary pricing-card__btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="pricing-features section">
+        <div class="pricing-features__container">
+            <h2 class="section__title">What's Included</h2>
+            <div class="pricing-features__grid">
+                <div class="pricing-feature">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>Latest fitness machines and free weights</p>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals ready to guide you</p>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>24/7 access with no time restrictions</p>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App</h3>
+                    <p>Track workouts and book classes on the go</p>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fas fa-shower"></i>
+                    <h3>Premium Facilities</h3>
+                    <p>Clean locker rooms and shower facilities</p>
+                </div>
+                <div class="pricing-feature">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Assessments</h3>
+                    <p>Regular fitness and health evaluations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section">
+        <div class="faq__container">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Can I cancel my membership anytime?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Yes, you can cancel your membership at any time with a 30-day notice. No long-term contracts required.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Do you offer trial periods?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Yes! We offer a 7-day free trial for new members. Come experience everything Fitvate has to offer.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Are personal trainers included?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Personal training is included in our Pro and Premium plans. Basic members can purchase sessions separately.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>What are your operating hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>We're open 24/7! Our facility is always available for your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
