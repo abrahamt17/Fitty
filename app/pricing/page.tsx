@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PageIntro from '@/components/PageIntro'
 import SiteFooter from '@/components/SiteFooter'
 import SiteHeader from '@/components/SiteHeader'
+import styles from './pricing.module.css'
 
 export const metadata: Metadata = {
   title: 'Pricing | Fitty',
@@ -47,20 +48,20 @@ export default function PricingPage() {
       />
 
       <section className="section">
-        <div className="pricing-grid">
+        <div className={styles.pricingGrid}>
           {plans.map((plan, index) => (
             <article
-              className={`pricing-card ${index === 1 ? 'pricing-card--featured' : ''}`}
+              className={`${styles.pricingCard} ${index === 1 ? styles.featured : ''}`}
               key={plan.name}
             >
               <p className="eyebrow">{plan.meta}</p>
               <h2>{plan.name}</h2>
-              <div className="pricing-card__price">
+              <div className={styles.price}>
                 {plan.price}
                 <span>/mo</span>
               </div>
               <p>{plan.description}</p>
-              <ul className="pricing-list">
+              <ul className={styles.pricingList}>
                 {plan.features.map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}

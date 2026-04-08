@@ -1,0 +1,46 @@
+.galleryGrid {
+  width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.galleryCard {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.variant1 {
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.14), rgba(7, 17, 31, 0.8)),
+    linear-gradient(135deg, #153d63, #07111f);
+}
+
+.variant2 {
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.16), rgba(7, 17, 31, 0.82)),
+    linear-gradient(135deg, #4b2415, #140d0b);
+}
+
+.variant3 {
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.14), rgba(7, 17, 31, 0.8)),
+    linear-gradient(135deg, #102f2a, #081214);
+}
+
+.overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 22px;
+}
+
+@media (max-width: 980px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+}
