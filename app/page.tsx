@@ -1,3 +1,7 @@
+import Link from 'next/link'
+import SiteFooter from '@/components/SiteFooter'
+import SiteHeader from '@/components/SiteHeader'
+
 const programs = [
   {
     title: 'Strength Systems',
@@ -58,20 +62,7 @@ export default function Home() {
       <div className="ambient ambient-three" />
 
       <section className="hero">
-        <header className="topbar">
-          <div className="brand">
-            Fit<span>ty</span>
-          </div>
-          <nav className="nav">
-            <a href="#programs">Programs</a>
-            <a href="#coaches">Coaches</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#launch">Launch</a>
-          </nav>
-          <a className="button button-ghost" href="#launch">
-            Rebuild the brand
-          </a>
-        </header>
+        <SiteHeader ctaHref="/pricing" ctaLabel="See memberships" />
 
         <div className="hero-grid">
           <div className="hero-copy">
@@ -83,12 +74,15 @@ export default function Home() {
               old static-page sprawl.
             </p>
             <div className="hero-actions">
-              <a className="button" href="#roadmap">
+              <Link className="button" href="#roadmap">
                 See what to add
-              </a>
-              <a className="text-link" href="#programs">
+              </Link>
+              <Link className="text-link" href="/about">
+                Meet the brand
+              </Link>
+              <Link className="text-link" href="/pricing">
                 Explore the rebuild
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -185,10 +179,12 @@ export default function Home() {
             gallery, contact flow, and booking-ready trainer details.
           </p>
         </div>
-        <a className="button" href="mailto:hello@fitty.local">
+        <Link className="button" href="/contact">
           Start the next commit
-        </a>
+        </Link>
       </section>
+
+      <SiteFooter />
     </main>
   )
 }
